@@ -25,7 +25,7 @@ Setup
 ------------
 1. Clone the git repository
 ```bash
- git clone https://github.com/slashfan/elasticsearch-backend
+ git clone https://github.com/mohamedmubashir89/elasticsearch-backend.git
  cd elasticsearch-backend
 ```
 
@@ -48,7 +48,7 @@ Setup
 ```
 * change the database credentials in .env file
 
-##Credentials
+#### Credentials
 * Username : admin@123.com
 * Password : 123
 
