@@ -1,3 +1,18 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+api_login_check:
+  path: /api/login_check
+
+api_get_orders_by_date:
+  path: /api/orders
+  controller: App\Controller\API\OrderController::getOrdersByDate
+  methods: GET|HEAD
+
+api_get_most_popular_sku:
+  path: /api/most_popular_sku
+  controller: App\Controller\API\OrderController::getMostPopularSkuByDate
+  methods: GET|HEAD
+
+api_get_sku_brought_together:
+  path: /api/most_sku_brought_together
+  controller: App\Controller\API\OrderController::getSkuBroughtTogetherByDate
+  methods: GET|HEAD
+
