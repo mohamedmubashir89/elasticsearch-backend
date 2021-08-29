@@ -67,5 +67,5 @@ Setup
 ## Api to include in postman
 
 ```bash
-import elasticsearch-api.postman_collection.json in postman
+import "elasticsearch-api.postman_collection.json" from root folder in postman
 ```
