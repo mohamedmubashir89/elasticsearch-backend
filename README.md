@@ -48,7 +48,7 @@ Setup
 ```
 * change the database credentials in .env file
 
-####Credentials
+##Credentials
 * Username : admin@123.com
 * Password : 123
 

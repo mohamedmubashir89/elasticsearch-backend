@@ -1,0 +1,55 @@
+{
+	"variables": [],
+	"info": {
+		"name": "elasticsearch-api",
+		"_postman_id": "f33cb5f9-1f64-8106-6ffb-895b471c6f0c",
+		"description": "Elasticsearch api to retrieve data from index in symfony framework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Order",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Parameters\n- from_date\n- to_date\n- country\n- city\n- page\n- per_page"
+			},
+			"response": []
+		},
+		{
+			"name": "Most popular sku",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Parameters\n- from_date\n- to_date"
+			},
+			"response": []
+		},
+		{
+			"name": "Sku brought together",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Parameters\n- from_date\n- to_date\n- page\n- per_page"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Parameters\n- username\n- password"
+			},
+			"response": []
+		}
+	]
+}
