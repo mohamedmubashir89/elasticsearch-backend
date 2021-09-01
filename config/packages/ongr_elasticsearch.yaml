@@ -1,0 +1,2 @@
+ongr_elasticsearch:
+  source_directories: [/src/Document]
