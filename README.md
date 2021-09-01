@@ -56,6 +56,7 @@ Setup
 
 ```bash
     php bin/console lexik:jwt:generate-keypair
+    if you have any issue when generating the key please install or enable the openssl extension 
 ```
    
 6. Run the application
