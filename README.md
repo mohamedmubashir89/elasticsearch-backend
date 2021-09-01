@@ -61,6 +61,7 @@ Setup
 6. Run the application
 
 ```bash
+    install sysmfony from the given link  https://symfony.com/download
     symfony server:start
 ```
 
