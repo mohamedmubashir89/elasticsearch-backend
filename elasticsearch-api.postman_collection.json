@@ -1,19 +1,65 @@
 {
-	"variables": [],
 	"info": {
+		"_postman_id": "f35e088b-514d-4019-bce5-a17699fdc960",
 		"name": "elasticsearch-api",
-		"_postman_id": "f33cb5f9-1f64-8106-6ffb-895b471c6f0c",
 		"description": "Elasticsearch api to retrieve data from index in symfony framework",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "Order",
 			"request": {
-				"url": "",
 				"method": "GET",
-				"header": [],
-				"body": {},
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MzA1MDc1NDIsImV4cCI6MTYzMDUxMTE0Miwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW5AMTIzLmNvbSJ9.yQQeNSijTKYr-xypvrmYfSk5LzAJXy9k8zgGlfZT4quJRirLXT8E0Y-2sUDb4G3EcY_figTdUPiRvhWjRPohrq8gKa8yHIKyswsXBLv93oAKBKOVQX2Sz3O-F4FqEgxnQbToSb1xp9JwrIduDPnFhNS_jiYLrRmSXid6ZtPwOEDVWSRkZYyNKRojf6Chy4xpKfoSHaoYBGDxKj24qWQV6D1_GhpN1q8Guy7EOyXEmITvzGzO5c4geYuW1y8nqLi9f9Ua-qMqQ6GQKkCNNgdYY5gbHbG074zaKwcTCM3GpuUaX0ft7FbhUwdHRWMkX6xsDw7pkgyYM1KFSvoQpsx_6w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/orders?from_date=2021-08-01&to_date=2021-08-30&country=AE&city=Dubai&page=1&per_page=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "from_date",
+							"value": "2021-08-01"
+						},
+						{
+							"key": "to_date",
+							"value": "2021-08-30"
+						},
+						{
+							"key": "country",
+							"value": "AE"
+						},
+						{
+							"key": "city",
+							"value": "Dubai"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "10"
+						}
+					]
+				},
 				"description": "Parameters\n- from_date\n- to_date\n- country\n- city\n- page\n- per_page"
 			},
 			"response": []
@@ -21,10 +67,41 @@
 		{
 			"name": "Most popular sku",
 			"request": {
-				"url": "",
 				"method": "GET",
-				"header": [],
-				"body": {},
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/atom+xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MzA1MDc1NDIsImV4cCI6MTYzMDUxMTE0Miwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW5AMTIzLmNvbSJ9.yQQeNSijTKYr-xypvrmYfSk5LzAJXy9k8zgGlfZT4quJRirLXT8E0Y-2sUDb4G3EcY_figTdUPiRvhWjRPohrq8gKa8yHIKyswsXBLv93oAKBKOVQX2Sz3O-F4FqEgxnQbToSb1xp9JwrIduDPnFhNS_jiYLrRmSXid6ZtPwOEDVWSRkZYyNKRojf6Chy4xpKfoSHaoYBGDxKj24qWQV6D1_GhpN1q8Guy7EOyXEmITvzGzO5c4geYuW1y8nqLi9f9Ua-qMqQ6GQKkCNNgdYY5gbHbG074zaKwcTCM3GpuUaX0ft7FbhUwdHRWMkX6xsDw7pkgyYM1KFSvoQpsx_6w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/most_popular_sku?from_date=2021-08-01&to_date=2021-08-30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"most_popular_sku"
+					],
+					"query": [
+						{
+							"key": "from_date",
+							"value": "2021-08-01"
+						},
+						{
+							"key": "to_date",
+							"value": "2021-08-30"
+						}
+					]
+				},
 				"description": "Parameters\n- from_date\n- to_date"
 			},
 			"response": []
@@ -32,10 +109,49 @@
 		{
 			"name": "Sku brought together",
 			"request": {
-				"url": "",
 				"method": "GET",
-				"header": [],
-				"body": {},
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MzA1MDc1NDIsImV4cCI6MTYzMDUxMTE0Miwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW5AMTIzLmNvbSJ9.yQQeNSijTKYr-xypvrmYfSk5LzAJXy9k8zgGlfZT4quJRirLXT8E0Y-2sUDb4G3EcY_figTdUPiRvhWjRPohrq8gKa8yHIKyswsXBLv93oAKBKOVQX2Sz3O-F4FqEgxnQbToSb1xp9JwrIduDPnFhNS_jiYLrRmSXid6ZtPwOEDVWSRkZYyNKRojf6Chy4xpKfoSHaoYBGDxKj24qWQV6D1_GhpN1q8Guy7EOyXEmITvzGzO5c4geYuW1y8nqLi9f9Ua-qMqQ6GQKkCNNgdYY5gbHbG074zaKwcTCM3GpuUaX0ft7FbhUwdHRWMkX6xsDw7pkgyYM1KFSvoQpsx_6w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/most_sku_brought_together?from_date=2021-08-01&to_date=2021-08-30&page=1&per_page=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"most_sku_brought_together"
+					],
+					"query": [
+						{
+							"key": "from_date",
+							"value": "2021-08-01"
+						},
+						{
+							"key": "to_date",
+							"value": "2021-08-30"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "10"
+						}
+					]
+				},
 				"description": "Parameters\n- from_date\n- to_date\n- page\n- per_page"
 			},
 			"response": []
@@ -43,10 +159,30 @@
 		{
 			"name": "login",
 			"request": {
-				"url": "",
-				"method": "GET",
-				"header": [],
-				"body": {},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"admin@123.com\", \"password\": \"123\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login_check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login_check"
+					]
+				},
 				"description": "Parameters\n- username\n- password"
 			},
 			"response": []

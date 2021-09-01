@@ -13,8 +13,8 @@ class PaginatorHelper
      * @param $input
      */
     public function __construct($input){
-        $this->pageNo = $input['page'] ?? 1;
-        $this->perPage = $input['per_page'] ?? self::PER_PAGE;
+        $this->pageNo = isset($input['page']) && !empty($input['page']) ? $input['page'] : 1;
+        $this->perPage = isset($input['per_page']) && !empty($input['per_page']) ? $input['per_page'] : self::PER_PAGE;
     }
 
     /**
